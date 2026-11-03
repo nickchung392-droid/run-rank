@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17251f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Your pace. Your progress. A personal running companion with GPS recording, quests, and milestones.">
+  <title>Run Rank — Your pace. Your progress.</title>
+  <link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="./icon-192.png"><link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app"></div>
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="gpx-input" accept=".gpx,application/gpx+xml,application/xml,text/xml" hidden>
+  <input type="file" id="backup-input" accept=".json,application/json" hidden>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
