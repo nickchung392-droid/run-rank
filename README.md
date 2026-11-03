@@ -2,9 +2,11 @@
 
 A personal running web app for iPhone and desktop. Track runs with foreground GPS, enter completed runs, import timed GPX activities, and turn effort into levels and milestones.
 
+[Open Run Rank](https://run-rank-omega.vercel.app)
+
 ## Use on iPhone
 
-Deploy the contents of `dist/` to an HTTPS static web host, open that URL in Safari, then use Share → Add to Home Screen. If offered, enable Open as Web App. Open the new icon once while online to prepare the offline shell.
+Open [Run Rank](https://run-rank-omega.vercel.app) in Safari, then use Share → Add to Home Screen. If offered, enable Open as Web App. Open the new icon once while online to prepare the offline shell.
 
 GPS recording requires location permission, an outdoor signal, and the app visible with the screen unlocked. It pauses on app switching or screen lock. Browser wake lock is requested where available. This is a web app; it does not provide native background GPS recording or a direct Strava account connection.
 
@@ -40,6 +42,8 @@ The desktop and 390 × 844 phone layouts were inspected. Manual save, XP award, 
 
 ## Hosting
 
-Publish the contents of `dist/` using any static host that supports HTTPS. There is no server, database, API key, or build step. The manifest and service-worker paths are relative, so the app can also be served from a repository subdirectory.
+The live app is hosted on Vercel at [run-rank-omega.vercel.app](https://run-rank-omega.vercel.app). Vercel serves `dist/` directly, with no build or install step. Updates pushed to the GitHub repository's `main` branch deploy automatically.
 
-Publishing this repository makes the source available; it does not by itself create a live website. The original hosting service’s project configuration is intentionally excluded from this portable copy.
+To host your own copy, publish the contents of `dist/` using any static host that supports HTTPS. There is no server, database, API key, or build step. The manifest and service-worker paths are relative, so the app can also be served from a repository subdirectory.
+
+The original hosting service’s project configuration is intentionally excluded from this portable copy.
